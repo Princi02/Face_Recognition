@@ -64,7 +64,7 @@ def subjectchoose(text_to_speech):
     subject.resizable(0, 0)
     subject.configure(background="black")
     # subject_logo = Image.open("UI_Image/0004.png")
-    # subject_logo = subject_logo.resize((50, 47), Image.ANTIALIAS)
+    # subject_logo = subject_logo.resize((50, 47), Image.Resampling.LANCZOS)
     # subject_logo1 = ImageTk.PhotoImage(subject_logo)
     titl = tk.Label(subject, bg="black", relief=RIDGE, bd=10, font=("arial", 30))
     titl.pack(fill=X)
